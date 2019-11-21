@@ -36,7 +36,7 @@ Create the Rust library.
 
 Edit _Cargo.toml_ and _src/lib.rs_ etc.
 
-The one of the points is specifying `staticlib` as `lib.create-type` to create a static library.
+The one of the points is specifying `staticlib` as `lib.crate-type` to create a static library.
 
 ```toml
 [lib]
