@@ -1,0 +1,16 @@
+cabal-version:       >=1.10
+
+name:                sample
+version:             0.1.0.0
+author:              Kazuki Okamoto
+maintainer:          kazuki.okamoto@kakkun61.com
+build-type:          Simple
+extra-source-files:  rust/Cargo.toml
+                   , rust/src/**/*.rs
+
+executable haskell-invokes-rust
+  main-is:             Main.hs
+  build-depends:       base >=4.13 && <4.14
+  default-language:    Haskell2010
+  extra-libraries:     sample, advapi32, ws2_32, userenv, gcc_eh, pthread
+  extra-lib-dirs:      rust/target/release

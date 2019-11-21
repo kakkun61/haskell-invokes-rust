@@ -1,0 +1,11 @@
+[package]
+name = "sample"
+version = "0.1.0"
+authors = ["Kazuki Okamoto <kazuki.okamoto@kakkun61.com>"]
+edition = "2018"
+
+[lib]
+name = "sample"
+crate-type = ["staticlib"]
+
+[dependencies]
